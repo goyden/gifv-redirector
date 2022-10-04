@@ -1,0 +1,17 @@
+{
+  "name": "Gifv to gif redirector",
+  "description": "Redirects user from Tumblr's gifv media page to the gif version",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.media.tumblr.com/*.gifv"],
+      "js": ["redirector.js"]
+    }
+  ]
+}
